@@ -68,23 +68,30 @@ header {
   color: $primary-text;
 }
 
-.menu__item:nth-child(3) .menu__link,
+/* .menu__item:nth-child(3) .menu__link,
 .fa-th {
-  color: rgba(0, 0, 0, 0.5);
   &:hover {
-    color: $third;
   }
-}
+} */
 
 .dropdown__input {
   position: absolute;
   opacity: 0;
+  width: 24px;
+  height: 24px;
+  z-index: -1;
 }
 
 .label {
   height: 24px;
+  width: 24px;
+  color: rgba(0, 0, 0, 0.5);
   &:hover {
+    color: $third;
     cursor: pointer;
+  }
+  &:focus {
+    outline: 1px solid blue;
   }
 }
 
