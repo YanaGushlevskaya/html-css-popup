@@ -6,7 +6,6 @@ header {
 
 .menu {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   margin: 0;
@@ -68,12 +67,6 @@ header {
   color: $primary-text;
 }
 
-/* .menu__item:nth-child(3) .menu__link,
-.fa-th {
-  &:hover {
-  }
-} */
-
 .dropdown__input {
   position: absolute;
   opacity: 0;
@@ -119,11 +112,13 @@ header {
     z-index: 1;
   }
 }
+.dropdown__input:checked+.label {
+  color: $third;
+}
 
 .dropdown__input:checked+.label ~ .wrapper {
   display: block;
 }
-
 
 .dropdown__list {
   display: flex;
@@ -139,6 +134,12 @@ header {
 .dropdown__item {
   flex-basis: 93px;
   min-height: 115px;
+  &:hover {
+    .dropdown__link {
+      border: 1px solid rgb(216, 216, 218);
+    }
+    cursor: pointer;
+  }
 }
 
 .dropdown__link {
@@ -204,6 +205,3 @@ header {
 .dropdown__input--additional:checked+.label--additional {
   display: none;
 }
-
-
-
