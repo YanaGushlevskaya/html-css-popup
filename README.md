@@ -1,11 +1,10 @@
 # HTML-CSS-practice
 Making popup with HTML and CSS
 
+[DEMO](https://yanagushlevskaya.github.io/html-css-popup/dist/)
 
-# Simple Boilerplate-starter
-
+## Simple Boilerplate-starter
 ## Installation
-
 ### Requirements
 
 - Node.js
@@ -17,10 +16,4 @@ Making popup with HTML and CSS
 
 ```
 npm run serve
-```
-
-## Compress images
-
-```
-npm run img
 ```
